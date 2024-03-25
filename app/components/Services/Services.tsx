@@ -5,88 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { StarIcon } from '@heroicons/react/24/solid'
 
-// CAROUSEL DATA
-
-interface DataType {
-    heading: string;
-    heading2: string;
-    imgSrc: string;
-    name: string;
-    students: number;
-    classes: number;
-    price: number;
-    rating: number;
-}
-
-const postData: DataType[] = [
-    {
-        heading: 'Full stack modern',
-        heading2: 'javascript',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/courseone.png',
-        students: 150,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'Design system',
-        heading2: 'with React programme',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/web-dev.svg',
-        students: 130,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'Design banner',
-        heading2: 'with Figma',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursethree.png',
-        students: 120,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/courseone.png',
-        students: 150,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursetwo.png',
-        students: 150,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursethree.png',
-        students: 150,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-]
-
-
 interface ServicesType {
     iconSrc: string,
     heading1: string,
     heading2: string,
-    exploreMore: string, 
+    exploreMore: string,
 }
 
 const myData: ServicesType[] = [
@@ -165,25 +88,25 @@ export default class MultipleItems extends Component {
             <div id="services">
                 <div className='mx-auto max-w-7xl py-20 px-4 lg:px-8 '>
 
-                    <div className="sm:flex justify-between items-center">
-                        <h3 className="text-midnightblue text-4xl  font-semibold mb-5 sm:mb-0" style = {{color: "rgb(55 65 81)", fontSize: "2.5rem", paddingBottom: "3rem"}}>Our Services</h3>
+                    <div className="sm:flex items-center">
+                        <h3 className="service-component-heading text-midnightblue text-4xl  font-semibold mb-5 sm:mb-0" style={{ color: "rgb(55 65 81)", fontSize: "2.5rem", paddingBottom: "3rem" }}>Our Services</h3>
                     </div>
 
-                    <div className="pizza">
+                    <div className="pizza justify-between">
                         {myData &&
-                        myData.map((item, i) => (
-                            <div key={i}
-                            // style={{ backgroundImage: `url(${item.iconSrc})` }}
-                            className="pizza1"
-                            // style={i==0 ? {flex: "0 0 52% !important"} : i==1? {flex: "0 0 47% !important"}:{flex: "0 0 47% !important"}}
-                            >
-                            <Image src={item.iconSrc} alt="etc" width={64} height={64} className="inline-block m-auto" />
-                            {/* <h3 style={{fontSize:25, fontWeight: "bold"}}>{item.heading1}</h3> */}
-                            <h3 className="text-2xl font-semibold" style = {{color: "rgb(55 65 81)", paddingTop: "3%", paddingBottom: "2%"}}>{item.heading1}</h3>
-                            <p className="text-lg" style={{color: "#424242"}}>{item.heading2}</p>
-                            {/* <Link href={item.exploreMore} className="exploreMoreLink">explore more</Link> */}
-                            </div>
-                        ))}
+                            myData.map((item, i) => (
+                                <div key={i}
+                                    // style={{ backgroundImage: `url(${item.iconSrc})` }}
+                                    className="pizza1"
+                                // style={i==0 ? {flex: "0 0 52% !important"} : i==1? {flex: "0 0 47% !important"}:{flex: "0 0 47% !important"}}
+                                >
+                                    <Image src={item.iconSrc} alt="etc" width={64} height={64} className="inline-block m-auto" />
+                                    {/* <h3 style={{fontSize:25, fontWeight: "bold"}}>{item.heading1}</h3> */}
+                                    <h3 className="text-2xl font-semibold" style={{ color: "rgb(55 65 81)", paddingTop: "5%", paddingBottom: "5%" }}>{item.heading1}</h3>
+                                    <p className="text-lg" style={{ color: "#424242" }}>{item.heading2}</p>
+                                    {/* <Link href={item.exploreMore} className="exploreMoreLink">explore more</Link> */}
+                                </div>
+                            ))}
                     </div>
                     {/* <Slider {...settings}>
                         {postData.map((items, i) => (

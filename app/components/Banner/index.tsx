@@ -17,7 +17,7 @@ const Banner = () => {
                         <h1 className='banner-text text-white text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0' style={{paddingTop: "14rem"}}>Next-Gen Solutions, Tailored for You</h1>
                         
                         <div className="inherit inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0" style={{paddingTop:"1.5rem"}}>
-                            <div className='block'>
+                            <div className='block contact-us-container'>
                                 <a href="#contact-us">
                                     <button className="contact-us-button text-white text-lg font-medium py-2 px-5 transition duration-150 ease-in-out rounded-full bg-Blueviolet " >
                                         Tell us about your project
