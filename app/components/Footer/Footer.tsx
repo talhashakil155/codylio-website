@@ -16,7 +16,7 @@ interface socialLinks {
 
 const socialLinks: socialLinks[] = [
     {
-        imgSrc: '/assets/footer/linkedin.svg',
+        imgSrc: '/assets/footer/Linkedin.png',
         link: 'https://www.linkedin.com/company/codylio',
         width: 20
     },
