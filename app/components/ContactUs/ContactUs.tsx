@@ -98,9 +98,9 @@ const Newsletter = () => {
             <div className="grid grid-cols-1 gap-y-10 gap-x-6 md:grid-cols-12 xl:gap-x-8">
                 <div className="newsletter col-span-12 mb-4 mt-32 lg:mx-24" style={{ margin: "1.5rem", padding: "1.25rem", display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: "#117aad", borderRadius: "24px" }}>
                     <div>
-                        <h3 className="newsletter-title text-4xl md:text-48xl text-center font-semibold text-white mb-3">Lets talk about your project.</h3>
+                        <h3 className="newsletter-title text-4xl md:text-48xl text-center font-semibold text-white mb-3">Let&apos;s talk about your project.</h3>
                         <h3 className="newsletter-description text-base font-normal opacity-75 text-white text-center mb-8">
-                            Fill the form and send in your queries. We will respond you asap. Alternatively, you can reach out to us via contact@codylio.com
+                            Fill the form and send in your queries. We&apos;ll respond you asap. Alternatively, you can reach out to us via contact@codylio.com
                         </h3>
                     </div>
                     <form

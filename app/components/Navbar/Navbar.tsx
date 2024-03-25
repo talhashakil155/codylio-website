@@ -14,7 +14,7 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Home', href: '#/', current: true },
+    { name: 'Home', href: '/#/', current: true },
     { name: 'Services', href: '#services', current: false },
     { name: 'About Us', href: '#about-us', current: false },
     { name: 'Testimonials', href: '#testimonial', current: false },
@@ -41,7 +41,7 @@ const CustomLink = ({ href, onClick, children }: { href: string; onClick: () => 
 const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
 
-    const [currentLink, setCurrentLink] = useState('#/');
+    const [currentLink, setCurrentLink] = useState('/#/');
 
     const handleLinkClick = (href: string) => {
         setCurrentLink(href);

@@ -1,20 +1,20 @@
 import Banner from './components/Banner/index';
-import Companies from './components/Companies/Companies';
-import Courses from './components/Courses/index';
-import Mentor from './components/Mentor/index';
-import Testimonials from './components/Testimonials/index';
-import Newsletter from './components/Newsletter/Newsletter';
+import Companies from './components/Technologies/Technologies';
+import Services from './components/Services/Services';
+import AboustUs from './components/AboustUs/AboustUs';
+import Testimonials from './components/Testimonials/Testimonials';
+import ContactUs from './components/ContactUs/ContactUs';
 
 
 export default function Home() {
   return (
     <main>
       <Banner />
-      <Courses />
+      <Services />
       {/* <Companies /> */}
-      <Mentor />
+      <AboustUs />
       <Testimonials />
-      <Newsletter />
+      <ContactUs />
     </main>
   )
 }
