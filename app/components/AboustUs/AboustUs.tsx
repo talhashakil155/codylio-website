@@ -13,27 +13,27 @@ interface DataType {
 
 const companyValues: DataType[] = [
     {
-        icon: '/assets/courses/design.png',
+        icon: '/assets/mentor/time.png',
         heading: 'Timely Delivery',
         description: "We prioritize Timely Delivery, ensuring our clients receive their solutions promptly, meeting their deadlines with precision."
     },
     {
-        icon: '/assets/courses/design.png',
+        icon: '/assets/mentor/quality2.png',
         heading: 'Quality Driven',
         description: "We uphold rigorous standards throughout our development process, ensuring excellence in every product we deliver."
     },
     {
-        icon: '/assets/courses/design.png',
+        icon: '/assets/mentor/flexibility2.png',
         heading: 'Flexibility',
         description: "Flexibility is our hallmark, adapting swiftly to evolving needs, providing tailored solutions that meet diverse requirements."
     },
     {
-        icon: '/assets/courses/design.png',
+        icon: '/assets/mentor/innovation.png',
         heading: 'Innovation',
         description: "At the heart of our ethos lies Innovation, driving us to constantly explore new ideas and technologies, delivering cutting-edge solutions."
     },
     {
-        icon: '/assets/courses/design.png',
+        icon: '/assets/mentor/audit.png',
         heading: 'On Demand POCs',
         description: "We excel in providing On Demand POCs (Proof of Concepts), offering rapid prototypes that showcase our capabilities and potential solutions."
     },
@@ -117,7 +117,9 @@ export default class MultipleItems extends Component {
             <div className="py-10 sm:py-24 bg-paleblue" id="about-us">
 
                 <div className='m-auto max-w-7xl sm:py-4 px-4 lg:px-8 relative'>
-                    <h2 className="lh-82 text-midnightblue text-4xl md:text-48xl text-start font-semibold">What Makes Us Different?</h2>
+                    <h2 className="lh-82 text-midnightblue text-4xl md:text-48xl text-start font-semibold"
+                    style={{marginBottom: "1rem"}}
+                    >What Makes Us Different?</h2>
                     {/* <div id="wrapper">
                         <div className="line-top"></div>
                         <div className="line-bottom"></div>
@@ -131,7 +133,7 @@ export default class MultipleItems extends Component {
                         {companyValues &&
                         companyValues.map((item, i) => (
                             <div key={i} className="company-values-item">
-                                <Image src={item.icon} alt="etc" width={35} height={35} className="inline-block m-auto" />
+                                <Image src={item.icon} alt="etc" width={50} height={50} className="inline-block m-auto" />
                                 <h3 className="text-2xl font-semibold" style = {{color: "rgb(55 65 81)", paddingTop: "2%", paddingBottom: "2%"}}>{item.heading}</h3>
                                 <p className="text-lg" style={{color: "#424242"}}>{item.description}</p>
                             </div>
