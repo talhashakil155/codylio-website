@@ -216,15 +216,32 @@ hr {
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 900px){
     .pizza1 > h3{
-        padding-top: 3% !important;
+        padding-top: 5% !important;
         padding-bottom: 2% !important;
     }
 
     .service-component-heading{
-        margin-bottom: 1rem !important;
+        margin-bottom: 3rem !important;
         padding-bottom: unset !important;
+    }
+}
+
+@media (min-width: 1024px){
+    .pizza1 > h3{
+        padding-top: 5% !important;
+        padding-bottom: 2% !important;
+    }
+}
+
+@media (min-width: 1260px){
+    .background-image{
+        height: 100vh !important;
+    }
+
+    .banner-text{
+        padding-top: 22rem !important;
     }
 }
 
@@ -253,7 +270,7 @@ hr {
 
 }
 
-@media (min-width: 470px) and (max-width: 750px) {
+@media (min-width: 470px) and (max-width: 751px) {
     .company-values-item{
         flex: 1 0 30% !important;
     }
@@ -414,15 +431,25 @@ hr {
     /* padding-right: 1.75rem; */
 }
 
-
 .background-image {
     background-image: url("/assets/banner/homepage.jpeg");
     /* height: 700px; */
+    /* height: 100vh; */
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed;  */
 }
+
+/* @media (min-width: 1345px){
+    .background-image {
+        height: 940px !important;
+    }
+
+    .banner-text{
+        padding-top: 22rem !important;
+    }
+} */
 
 /* #home-section{
     position: relative;
