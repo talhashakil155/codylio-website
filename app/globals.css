@@ -235,6 +235,12 @@ hr {
     }
 }
 
+@media (min-width: 770px) and (max-width: 1260px){
+    .newsletter{
+        padding-left: 4rem !important;
+    }
+}
+
 @media (min-width: 1260px) and (min-height: 670px){
     .background-image{
         height: 100vh !important;
@@ -285,11 +291,11 @@ hr {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 770px) {
     .newsletter{
         display: block !important;
-        padding: 1rem;
-        margin: 1.5rem;
+        padding: 1rem !important;
+        margin: 1.5rem !important;
     }
 
     .newsletter .newsletter-title{
@@ -298,6 +304,10 @@ hr {
 
     .newsletter .newsletter-description{
         font-size: 1rem;
+    }
+
+    .newsletter form{
+        margin-left: 1rem !important;
     }
 }
 

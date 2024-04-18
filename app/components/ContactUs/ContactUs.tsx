@@ -96,17 +96,17 @@ const Newsletter = () => {
 <div className="col-span-12 bg-imagee"> */}
         <div id="contact-us" className="mx-auto max-w-2xl md:max-w-7xl sm:rounded-3xl">
             <div className="grid grid-cols-1 gap-y-10 gap-x-6 md:grid-cols-12 xl:gap-x-8">
-                <div className="newsletter col-span-12 mb-4 mt-32 lg:mx-24" style={{ margin: "1.5rem", padding: "1.25rem", display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: "#117aad", borderRadius: "24px" }}>
+                <div className="newsletter col-span-12 mb-4 mt-32 lg:mx-24" style={{ margin: "1.5rem", paddingRight: "1.25rem", paddingTop: "1.25rem", paddingBottom: "1.25rem", display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: "#117aad", borderRadius: "24px", paddingLeft: "7rem"}}>
                     <div>
                         <h3 className="newsletter-title text-4xl md:text-48xl text-center font-semibold text-white mb-3">Let&apos;s talk about your project.</h3>
                         <h3 className="newsletter-description text-base font-normal opacity-75 text-white text-center mb-8">
-                            Fill the form and send in your queries. We&apos;ll respond you asap. Alternatively, you can reach out to us via contact@codylio.com
+                            Fill the form and send in your queries. We&apos;ll respond you asap.
                         </h3>
                     </div>
                     <form
                         onSubmit={handleSubmit}
                         className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
-                        style={{ marginLeft: "1rem" }}
+                        style={{ marginLeft: "5rem" }}
                     >
                         <h1 className="text-2xl font-bold dark:text-gray-50">
                             Send a message
