@@ -35,7 +35,7 @@ const postData: DataType[] = [
     {
         name: "Hassaan Shakil",
         profession: 'COO, Cars & Coffee',
-        comment: "Highly impressed with Codylio's performance. From initial consultation to final delivery, their focus on quality and efficiency was evident. A trusted partner for our business growth.",
+        comment: "Highly impressed with Codylio's performance. From initial consultation to final delivery, their focus on quality and efficiency was evident.",
         imgSrc: '/assets/testimonial/car.png',
     },
     {
