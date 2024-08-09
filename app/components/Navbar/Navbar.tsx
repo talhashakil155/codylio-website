@@ -4,39 +4,42 @@ import React, { useState, useEffect } from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Signdialog from "./Signdialog";
 import Registerdialog from "./Registerdialog";
 
 interface NavigationItem {
     name: string;
     href: string;
     current: boolean;
+    isDropdown: boolean;
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Home', href: '/#/', current: true },
-    { name: 'Services', href: '#services', current: false },
-    { name: 'About Us', href: '#about-us', current: false },
-    { name: 'Testimonials', href: '#testimonial', current: false },
+    { name: 'Home', href: '/#/', current: true, isDropdown: false },
+    { name: 'Services', href: '/#services', current: false, isDropdown: false },
+    { name: 'About Us', href: '/#about-us', current: false, isDropdown: false },
+    { name: 'Testimonials', href: '/#testimonial', current: false, isDropdown: false },
+    { name: 'Projects', href: '/projects/marketplacefresh', current: false, isDropdown: true },
 ];
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ');
 }
 
-const CustomLink = ({ href, onClick, children }: { href: string; onClick: () => void; children: React.ReactNode }) => {
-    return (
-        <Link href={href} passHref>
-            <span
-                onClick={onClick}
-                className="px-3 py-4 text-lg font-normal"
-            >
-                {children}
-            </span>
-        </Link>
-    );
-};
 
+interface CustomLinkProps {
+    href: string;
+    onClick?: () => void;
+    children: React.ReactNode;
+    className?: string; // Add className prop
+  }
+
+  const CustomLink: React.FC<CustomLinkProps> = ({ href, onClick, children, className }) => {
+    return (
+      <a href={href} onClick={onClick} className={className}>
+        {children}
+      </a>
+    );
+  };
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -48,6 +51,12 @@ const Navbar = () => {
     };
     const [show, setShow] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+
+    const [openDropdown, setOpenDropdown] = useState(false);
+
+    const handleDropdownToggle = () => {
+        setOpenDropdown(!openDropdown);
+    };
 
     const controlNavbar = () => {
         if (typeof window !== 'undefined') {
@@ -64,6 +73,8 @@ const Navbar = () => {
         }
     };
 
+    const [isClient, setIsClient] = useState(false);
+
     useEffect(() => {
         if (typeof window !== 'undefined') {
             window.addEventListener('scroll', controlNavbar);
@@ -74,6 +85,7 @@ const Navbar = () => {
             };
         }
     }, [lastScrollY]);
+
 
     return (
         <div>
@@ -96,44 +108,76 @@ const Navbar = () => {
 
                                 {/* LINKS */}
 
-                                <div className="hidden lg:block m-auto">
-                                    <div className="flex space-x-4">
+                                <div className="block m-auto navbar-collapse">
+                                    <div className="flex">
                                         {navigation.map((item) => (
-                                            <CustomLink
-                                                key={item.name}
-                                                href={item.href}
-                                                onClick={() => handleLinkClick(item.href)}
-                                            >
-                                                <span
+                                            item.isDropdown ? (
+                                                <div
+                                                    key={item.name}
+                                                    className="relative group inline-block align-middle"
+                                                >
+                                                    <button
+                                                        onClick={handleDropdownToggle}
+                                                        className={classNames(
+                                                            'text-white navbar-links px-3 py-4 text-lg font-normal opacity-75 hover:opacity-100 flex items-center'
+                                                        )}
+                                                    >
+                                                        {item.name}
+                                                        <svg
+                                                            className={`w-4 h-4 ml-2 transition-transform transform ${openDropdown ? 'rotate-180' : ''}`}
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            fill="none"
+                                                            viewBox="0 0 24 24"
+                                                            stroke="currentColor"
+                                                        >
+                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                                        </svg>
+                                                    </button>
+                                                    <div
+                                                        className= {`absolute mt-1 bg-white rounded-md shadow-lg ${openDropdown?" block" : " hidden"}`}
+                                                        
+                                                    >
+                                                        <ul className="whitespace-nowrap">
+                                                            <li>
+                                                                <Link href="/projects/marketplacefresh" className="block px-4 py-2 text-gray-800 hover:bg-gray-300">
+                                                                    MarketPlace Fresh
+                                                                </Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link href="/projects/logivex" className="block px-4 py-2 text-gray-800 hover:bg-gray-300">
+                                                                    Logivex
+                                                                </Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link href="/projects/tyco" className="block px-4 py-2 text-gray-800 hover:bg-gray-300">
+                                                                    TYCO - Rice Company
+                                                                </Link>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            ) : (
+                                                <Link
+                                                    key={item.name}
+                                                    href={item.href}
+                                                    onClick={() => handleLinkClick(item.href)}
                                                     className={classNames(
                                                         item.href === currentLink ? 'underline-links text-white' : 'text-white',
-                                                        'navbar-links px-3 py-4 text-lg font-normal opacity-75 hover:opacity-100'
+                                                        'navbar-links px-3 py-4 text-lg font-normal opacity-75 hover:opacity-100 inline-block align-middle'
                                                     )}
-                                                    aria-current={item.href ? 'page' : undefined}
+                                                    aria-current={item.href === currentLink ? 'page' : undefined}
                                                 >
                                                     {item.name}
-                                                </span>
-                                            </CustomLink>
+                                                </Link>
+                                            )
                                         ))}
                                     </div>
                                 </div>
                             </div>
 
-                            {/* SIGNIN DIALOG */}
-
-                            {/* <Signdialog /> */}
-
-
-                            {/* REGISTER DIALOG */}
-
                             <Registerdialog />
 
-
-                            {/* DRAWER FOR MOBILE VIEW */}
-
-                            {/* DRAWER ICON */}
-
-                            <div className='block lg:hidden'>
+                            <div className='hidden navbar-collapse-lines'>
                                 <Bars3Icon className="three-lines-navbar block h-6 w-6" aria-hidden="true" onClick={() => setIsOpen(true)} />
                             </div>
 
@@ -143,11 +187,9 @@ const Navbar = () => {
                     </div>
                 </>
             </Disclosure>
-                            {/* DRAWER LINKS DATA */}
-
-                            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-                                <Drawerdata />
-                            </Drawer>
+            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+                <Drawerdata />
+            </Drawer>
         </div>
     );
 };

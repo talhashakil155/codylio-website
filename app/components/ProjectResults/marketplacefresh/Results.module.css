@@ -1,0 +1,96 @@
+.parentContainer{
+  margin-bottom: 4rem;
+  background: linear-gradient(-60deg, #77cee8 29.34%, rgb(183 217 200) 87.98%);
+}
+
+.resultsContainer {
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+  
+  .heading {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(55 65 81);
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #666666; /* Slightly darker grey for text */
+    margin-bottom: 4rem;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+  
+  .card h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333; /* Dark text for the percentage */
+    position: relative;
+    display: inline-block;
+  }
+  
+  .card h3::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #f4a325; /* Orange-yellow shading */
+    z-index: -1;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    padding: 0 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #777; /* Lighter text for the description */
+  }
+  
+  .shaded-text {
+    font-size: 32px;
+    position: relative;
+    display: inline-block;
+  }
+  
+@media (min-width: 1260px) {
+  .heading {
+      font-size: 32px;
+  }
+}
+
+@media ((min-width: 900px) and (max-width: 1260px)) {
+  .heading {
+      font-size: 25px;
+  }
+}
+
+@media ((min-width: 600px) and (max-width: 900px)) {
+  .heading {
+      font-size: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .description {
+      font-size: 16px;
+  }
+}
+

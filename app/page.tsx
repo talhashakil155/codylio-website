@@ -11,7 +11,6 @@ export default function Home() {
     <main>
       <Banner />
       <Services />
-      {/* <Companies /> */}
       <AboustUs />
       <Testimonials />
       <ContactUs />
