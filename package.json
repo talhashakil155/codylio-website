@@ -1,5 +1,5 @@
 {
-  "name": "elearning",
+  "name": "Codylio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -24,11 +24,15 @@
     "eslint-config-next": "13.4.2",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.7.3",
+    "fs": "^0.0.1-security",
     "next": "^14.1.0",
+    "path": "^0.12.7",
     "postcss": "8.4.23",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.25.1",
+    "react-simple-image-slider": "^2.4.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "3.3.2",

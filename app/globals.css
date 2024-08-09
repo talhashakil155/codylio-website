@@ -18,9 +18,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    /* background-color: white !important; */
     opacity: 1.9;
-    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12); */
     transition: 0.3s linear;
     padding: 0px !important;
     z-index: 3;
@@ -43,11 +41,6 @@ html[data-scroll="0"] .navbar .contact-us {
     color: white;
 }
 
-/* .navbar:hover .contact-us{
-    background-color: rgba(101, 86, 255, 0.15) !important;
-    color:#6556FF
-} */
-
 .navbar:hover .contact-us:hover {
     background-color: rgba(93, 80, 240, 0.15) !important;
     color: blue;
@@ -57,12 +50,6 @@ html[data-scroll="0"] .navbar .contact-us {
     /* background-color: #EAEFF5 !important; */
     background-color: white !important;
 }
-
-/* @media(hover:hover){
-    .navbar:hover {
-        background-color: #EAEFF5 !important;
-    }
-} */
 
 html:not([data-scroll="0"]) .navbar {
     position: fixed;
@@ -76,11 +63,11 @@ html:not([data-scroll="0"]) .navbar {
     z-index: 3;
 }
 
-html[data-scroll="0"] .three-lines-navbar{
+html[data-scroll="0"] .three-lines-navbar {
     color: white;
 }
 
-html[data-scroll="0"] .navbar:hover .three-lines-navbar{
+html[data-scroll="0"] .navbar:hover .three-lines-navbar {
     color: black;
 }
 
@@ -197,8 +184,8 @@ hr {
     width: 270px;
 }
 
-@media (min-width: 700px){
-    .pizza1{
+@media (min-width: 700px) {
+    .pizza1 {
         list-style: none;
         flex: 0 0 45%;
         /* padding-top: 3%;
@@ -209,53 +196,53 @@ hr {
     }
 }
 
-@media (min-width: 470px) and (max-width: 700px){
-    .pizza1{
+@media (min-width: 470px) and (max-width: 700px) {
+    .pizza1 {
         list-style: none;
         flex: 0 0 100% !important;
     }
 }
 
-@media (max-width: 900px){
-    .pizza1 > h3{
+@media (max-width: 900px) {
+    .pizza1>h3 {
         padding-top: 5% !important;
         padding-bottom: 2% !important;
     }
 
-    .service-component-heading{
+    .service-component-heading {
         margin-bottom: 3rem !important;
         padding-bottom: unset !important;
     }
 }
 
-@media (min-width: 1024px){
-    .pizza1 > h3{
+@media (min-width: 1024px) {
+    .pizza1>h3 {
         padding-top: 5% !important;
         padding-bottom: 2% !important;
     }
 }
 
-@media (min-width: 770px) and (max-width: 1260px){
-    .newsletter{
+@media (min-width: 770px) and (max-width: 1260px) {
+    .newsletter {
         padding-left: 4rem !important;
     }
 }
 
-@media (min-width: 1260px) and (min-height: 670px){
-    .background-image{
+@media (min-width: 1260px) and (min-height: 670px) {
+    .background-image {
         height: 100vh !important;
     }
 }
 
 
-@media (min-width: 1260px) and (max-width: 1500px){
-    .banner-text{
+@media (min-width: 1260px) and (max-width: 1500px) {
+    .banner-text {
         padding-top: 16rem !important;
     }
 }
 
-@media (min-width: 1500px){
-    .banner-text{
+@media (min-width: 1500px) {
+    .banner-text {
         padding-top: 22rem !important;
     }
 }
@@ -265,7 +252,7 @@ hr {
         width: 15px;
     }
 
-    .pizza1{
+    .pizza1 {
         flex: 0 0 100% !important;
         border: solid 1px #dfdfdf;
         border-radius: 20px;
@@ -275,38 +262,38 @@ hr {
         padding: 1.5rem;
     }
 
-    .company-values-item{
+    .company-values-item {
         flex: 1 0 100% !important;
     }
 
-    .testimonial{
+    .testimonial {
         margin-right: 0px !important;
     }
 
 }
 
 @media (min-width: 470px) and (max-width: 751px) {
-    .company-values-item{
+    .company-values-item {
         flex: 1 0 30% !important;
     }
 }
 
 @media (max-width: 770px) {
-    .newsletter{
+    .newsletter {
         display: block !important;
         padding: 1rem !important;
         margin: 1.5rem !important;
     }
 
-    .newsletter .newsletter-title{
+    .newsletter .newsletter-title {
         font-size: 1.75rem;
     }
 
-    .newsletter .newsletter-description{
+    .newsletter .newsletter-description {
         font-size: 1rem;
     }
 
-    .newsletter form{
+    .newsletter form {
         margin-left: 1rem !important;
     }
 }
@@ -353,7 +340,7 @@ hr {
 }
 
 @media (max-width: 260px) {
-    .navbar-logo{
+    .navbar-logo {
         content: url("/assets/logo/Codylio logo.png");
     }
 }
@@ -369,22 +356,22 @@ hr {
 } */
 
 @media (max-width: 600px) {
-    html[data-scroll="0"] .navbar{
+    html[data-scroll="0"] .navbar {
         position: unset !important;
     }
 
-    html[data-scroll="0"] .three-lines-navbar{
+    html[data-scroll="0"] .three-lines-navbar {
         color: black;
     }
 
-    html:not([data-scroll="0"]) .navbar{
+    html:not([data-scroll="0"]) .navbar {
         position: fixed !important;
     }
 
-    .navbar-logo{
+    .navbar-logo {
         width: auto !important;
     }
-    
+
     /* html[data-scroll="0"] .navbar:hover .three-lines-navbar{
         color: black;
     } */
@@ -436,66 +423,20 @@ hr {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0%;
-    /* max-width: 45%; */
-    /* min width agr 960 px hai tou max width assign hogi wrna flex 1  */
 }
 
 .pizza1 {
     list-style: none;
     flex: 0 0 45%;
-    /* padding-top: 3%;
-    padding-right: 5%; */
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
-    /* padding-right: 1.75rem; */
 }
 
 .background-image {
     background-image: url("/assets/banner/homepage.jpeg");
-    /* height: 700px; */
-    /* height: 100vh; */
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed;  */
 }
-
-/* @media (min-width: 1345px){
-    .background-image {
-        height: 940px !important;
-    }
-
-    .banner-text{
-        padding-top: 22rem !important;
-    }
-} */
-
-/* #home-section{
-    position: relative;
-}
-
-#home-section:before{
-    position: absolute;
-    background-image: url("/assets/banner/homepage.jpeg");
-    height: 1204px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-
-}
-
-.banner-text{
-    position: relative;
-} */
 
 .company-values {
     display: flex;
@@ -506,12 +447,8 @@ hr {
 .company-values-item {
     list-style: none;
     flex: 0 0 30%;
-    /* padding-top: 3%; */
-    /* padding-right: 1.5rem; */
     border-radius: 8px;
     background-color: white;
-    /* padding-left: 43px; */
-    /* padding-bottom: 25px; */
     margin-right: 1.5rem;
     margin-top: 2rem;
     padding: 1.75rem !important;
@@ -548,6 +485,10 @@ hr {
     background-color: #eee;
     border: solid 1px #ddd;
     z-index: 999;
+}
+
+.success-stories .slick-slider{
+    overflow: hidden;
 }
 
 .line-top {
@@ -605,4 +546,285 @@ hr {
     right: 0;
     transform: rotate(5deg);
     width: 500px;
+}
+
+
+.testimonial-detail {
+    margin-top: 10rem;
+    width: 100%;
+}
+
+.testimonial-detail h1 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 23px;
+    /* margin-bottom: 2rem; */
+}
+
+.testimonial-detail h2 {
+    width: 100%;
+    margin: 0 auto;
+    color: rgb(146, 142, 142);
+}
+
+
+.testimonial-desc {
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 0rem !important;
+    padding-left: 0rem !important;
+    margin-left: 0rem !important;
+    padding-right: 0rem !important;
+    padding-top: 3rem !important;
+}
+
+.testimonial-desc1 .slick-slider{
+    overflow: hidden !important;
+}
+
+.testimonial-desc1 .slick-dots{
+    position: sticky !important;
+}
+
+.image-slider > div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.testimonial-desc>div {
+    flex: 1;
+}
+
+.testimonial-detail h1{
+    color: rgb(55 65 81);
+}
+
+.testimonial-desc1{
+    margin-right: 6rem;
+    flex-basis: 40% !important;
+    font-size: 18px;
+}
+
+@media (min-width: 1260px) {
+    .testimonial-detail h1 {
+        font-size: 32px;
+    }
+    
+    .testimonial-detail h2 {
+        font-size: 18px;
+    }
+    .testimonial-desc p {
+        flex: 1;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+}
+
+@media ((min-width: 900px) and (max-width: 1260px)) {
+    .testimonial-detail h1 {
+        font-size: 25px;
+    }
+    
+    .testimonial-detail h2 {
+        font-size: 18px;
+    }
+    .testimonial-desc p {
+        flex: 1;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+}
+
+@media ((min-width: 600px) and (max-width: 900px)) {
+
+    .testimonial-detail h1 {
+        font-size: 24px;
+    }
+    
+    .testimonial-desc p {
+        flex: 1;
+        margin-right: 20px;
+        font-size: 17px;
+    }
+}
+
+
+@media ((max-width: 600px)) {
+    .testimonial-detail {
+        font-size: 23px;
+        margin-top: 12%;
+    }
+    
+    .testimonial-desc1 .description li {
+        font-size: 16px;
+    }
+}
+
+@media ((max-width: 1220px)){
+    .testimonial-desc{
+        display: block;
+        max-width: 100% !important;
+        overflow-x: hidden;
+    }
+
+    .testimonial-desc .testimonial-desc1{
+        display: block;
+        width: 100%;
+    }
+
+    .testimonial-desc .custom-slider{
+        margin-top: 3rem !important;
+    }
+
+    .testimonial-desc .image-slider{
+        display: block;
+        /* width: 100%; */
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .testimonial-desc .image-slider img{
+        /* width: 100%; */
+        height: auto;
+        display: block;
+    }
+
+    .image-slider div{
+        /* width: 100% !important; */
+    }
+}
+
+/* Ensure slider container handles overflow properly */
+.slider-container {
+    position: relative;
+    overflow: hidden; /* Hide any overflow content */
+    width: 100%; /* Ensure it uses the full width of the parent */
+  }
+  
+  .slider-container img {
+    width: 100%; /* Ensure images fit within the slider */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+  
+  /* Additional styling for container */
+  .container {
+    max-width: 100%; /* Ensure container doesn't exceed viewport width */
+    overflow-x: hidden; /* Hide horizontal overflow if necessary */
+  }
+  
+  @media((max-width: 1066px)){
+    .navbar-collapse{
+        display: none !important;
+    }
+    .navbar-collapse-lines{
+        display: block !important;
+    }
+  }
+
+  .testimonial-desc1 .description li{
+    color: #695e5e;
+  }
+
+  .custom-slider {
+    width: 100%;
+    /* max-width: 1000px; */
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow beyond the container */
+    flex-basis: 60% !important;
+  }
+  
+  .slick-slider {
+    display: block !important;
+    /* box-shadow: 0 0px 9px 0px rgba(0, 0, 0, 0.2), 0 0px 9px 0px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .slick-list {
+    display: block !important;
+    overflow: hidden; /* Hide any content beyond the visible area */
+    position: relative;
+  }
+  
+  .slick-track {
+    display: flex !important;
+    width: 100%;
+  }
+  
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure each slide takes the full width */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+  }
+  
+  .slider-image {
+    width: 100%; /* Make sure the image takes the full width of its container */
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  
+  
+
+  .custom-slider{
+    height: fit-content;
+    box-shadow: 0 0px 9px 0px rgba(0, 0, 0, 0.2), 0 0px 9px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slick-dots {
+    position: unset !important;
+  }
+
+  .dropdown-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    color: white;
+    opacity: 0.75;
+}
+
+.dropdown-button:hover {
+    opacity: 1;
+}
+
+.dropdown-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-top: 0.25rem;
+    background-color: #e2e8f0; /* Light grey */
+    border-radius: 0.375rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+.dropdown-container:hover .dropdown-menu,
+.dropdown-container.open .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #2d3748; /* Dark grey */
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #cbd5e0; /* Slightly darker grey on hover */
 }

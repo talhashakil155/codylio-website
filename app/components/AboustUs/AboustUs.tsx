@@ -1,5 +1,4 @@
 "use client"
-import Slider from "react-slick";
 import React, { Component } from "react";
 import Image from "next/image";
 
@@ -120,45 +119,16 @@ export default class MultipleItems extends Component {
                     <h2 className="lh-82 text-midnightblue text-4xl md:text-48xl text-start font-semibold"
                     style={{marginBottom: "1rem"}}
                     >What Makes Us Different?</h2>
-                    {/* <div id="wrapper">
-                        <div className="line-top"></div>
-                        <div className="line-bottom"></div>
-                    </div>                     */}
-                    {/* <div className=''>
-                        <div className='dashed line1'></div>
-                        <div className='dashed line2'></div>
-                        <div className='dashed line3'></div>
-                    </div> */}
                     <div className="company-values">
                         {companyValues &&
                         companyValues.map((item, i) => (
                             <div key={i} className="company-values-item">
                                 <Image src={item.icon} alt="etc" width={50} height={50} className="inline-block m-auto" />
-                                <h3 className="text-2xl font-semibold" style = {{color: "rgb(55 65 81)", paddingTop: "2%", paddingBottom: "2%"}}>{item.heading}</h3>
+                                <h3 className="text-2xl font-semibold" style = {{color: "rgb(55 65 81)", paddingTop: "10%", paddingBottom: "2%"}}>{item.heading}</h3>
                                 <p className="text-lg" style={{color: "#424242"}}>{item.description}</p>
                             </div>
                         ))}
                     </div>
-
-                    {/* <Slider {...settings}>
-                        {postData.map((items, i) => (
-                            <div key={i}>
-                                <div className='m-3 py-14 md:my-10 text-center'>
-                                    <div className="relative">
-                                        <Image src={items.imgSrc} alt="user-image" width={306} height={0} className="inline-block m-auto" />
-                                        <div className="absolute right-[84px] bottom-[102px] bg-white rounded-full p-4">
-                                            <Image src={'/assets/mentor/linkedin.svg'} alt="linkedin-image" width={25} height={24} />
-                                        </div>
-                                    </div>
-                                    <div className="-mt-10">
-                                        <h3 className='text-2xl font-semibold text-lightblack'>{items.name}</h3>
-                                        <h4 className='text-lg font-normal text-lightblack pt-2 opacity-50'>{items.profession}</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </Slider> */}
-
                 </div>
             </div>
 

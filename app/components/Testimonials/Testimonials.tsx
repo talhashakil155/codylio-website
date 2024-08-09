@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import React, { Component } from "react";
 import { StarIcon } from '@heroicons/react/24/solid';
 import Image from "next/image";
-
-// CAROUSEL DATA
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 interface DataType {
     profession: string;
@@ -14,6 +14,12 @@ interface DataType {
 }
 
 const postData: DataType[] = [
+    {
+        name: "Jaryd Konig",
+        profession: 'IT Head, MarketPlaceFresh',
+        comment: 'Remarkable work delivered by Talha and his team. Complex features addition, backend setup and third-party integrations were done smoothly.',
+        imgSrc: '/assets/testimonial/MarketPlaceFresh.png',
+    },
     {
         name: "Specimen Jeanne",
         profession: 'CEO, Line Mark',
@@ -40,8 +46,6 @@ const postData: DataType[] = [
     },
 ]
 
-// CAROUSEL SETTINGS
-
 export default class MultipleItems extends Component {
 
     render() {
@@ -52,7 +56,7 @@ export default class MultipleItems extends Component {
             slidesToShow: 2.5,
             // centerMode: true,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             autoplay: false,
             speed: 500,
             autoplaySpeed: 2500,
@@ -68,7 +72,7 @@ export default class MultipleItems extends Component {
                     }
                 },
                 {
-                    breakpoint: 800,
+                    breakpoint: 1000,
                     settings: {
                         slidesToShow: 1.5,
                         slidesToScroll: 1,
@@ -77,7 +81,7 @@ export default class MultipleItems extends Component {
                     }
                 },
                 {
-                    breakpoint: 470,
+                    breakpoint: 600,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -89,35 +93,14 @@ export default class MultipleItems extends Component {
         };
 
         return (
-            <div className="pt-20 pb-10 sm:pb-32 lg:py-16" id="testimonial">
+            <div className="success-stories pt-20 pb-10 sm:pb-32 lg:py-16" id="testimonial">
                 <div className='mx-auto max-w-7xl py-4 px-8'>
-                    <h2 className="lh-82 text-midnightblue text-4xl md:text-48xl text-start font-semibold" style={{ paddingBottom: "3rem"}}>Success Stories</h2>
-                    <Slider {...settings}>
+                    <h2 className="lh-82 text-midnightblue text-4xl md:text-48xl text-start font-semibold" style={{ paddingBottom: "1rem"}}>Success Stories</h2>
+                    <Slider {...settings} >
                         {postData.map((items, i) => (
                             <div key={i}>
-                                {/* <div className={`bg-white m-4 p-5 my-20 relative ${i % 2 ? 'middleDiv' : 'testimonial-shadow'}`}>
-                                    <div className="absolute top-[-45px]">
-                                        <Image src={items.imgSrc} alt={items.imgSrc} width={100} height={100} className="inline-block" />
-                                    </div>
-                                    <h4 className='text-base font-normal text-darkgray my-4'>{items.comment}</h4>
-                                    <hr style={{ color: "#D7D5D5" }} />
-                                    <div className="flex justify-between">
-                                        <div>
-                                            <h3 className='text-lg font-medium text-darkbrown pt-4 pb-2'>{items.name}</h3>
-                                            <h3 className='text-sm font-normal text-lightgray pb-2'>{items.profession}</h3>
-                                        </div>
-                                        <div className="flex">
-                                            <StarIcon width={20} className="text-gold" />
-                                            <StarIcon width={20} className="text-gold" />
-                                            <StarIcon width={20} className="text-gold" />
-                                            <StarIcon width={20} className="text-gold" />
-                                            <StarIcon width={20} className="text-gold" />
-                                        </div>
-                                    </div>
-                                </div> */}
-
-                                <div className="testimonial" style={{ marginRight: "30px", borderRadius: "10px", marginBottom: "2rem", backgroundColor: "rgb(248, 248, 248)", padding: "10px", height: "30rem", display:"table" }}>
-                                    {i == 3 ?
+                                <div className="testimonial" style={{ marginRight: "1rem", borderRadius: "10px", marginBottom: "2rem", backgroundColor: "rgb(248, 248, 248)", padding: "10px", height: "30rem", display:"table", marginTop: "1rem", marginLeft: "1rem", boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)" }}>
+                                    {i == 4 ?
                                         <div style={{ display: "flex", backgroundColor: "rgb(250, 199, 255)", borderRadius: "10px", maxHeight: "14rem", width: "100%", height: "100%" }}>
                                             <div style={{marginLeft:"1.5rem", paddingTop:"3rem", paddingRight:"0.55rem"}}>
                                                 <h1 style={{fontWeight:"600", fontSize:"1.5rem", fontStyle:"italic", color:"#c45fda"}}>Social Buddy</h1>
