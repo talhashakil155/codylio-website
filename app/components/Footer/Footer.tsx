@@ -57,7 +57,7 @@ const products: ProductType[] = [
         section: "Contact Us",
         // link: ['+92-313-4488511', 'contact@codylio.com', "Gulberg II, Lahore, Punjab, Pakistan"],
         // icon: ['/assets/footer/phone.png', '/assets/footer/email.png', '/assets/footer/location.png']
-        link: ["Gulberg II, Lahore, Punjab, Pakistan"],
+        link: ["Lahore, Punjab, Pakistan"],
         icon: ['/assets/footer/location.png']
     }
 ]
