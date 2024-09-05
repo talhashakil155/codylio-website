@@ -16,33 +16,33 @@ const myData: ServicesType[] = [
     {
         iconSrc: '/assets/courses/custom_software.png',
         heading1: 'Custom Software Development',
-        heading2: "Our team specializes in crafting tailored software solutions designed to meet your unique business needs, ensuring seamless integration and maximum efficiency.",
+        heading2: "Our team specializes in creating tailored software solutions designed to meet your unique business needs, ensuring seamless integration and maximum efficiency.",
         exploreMore: '#/',
     },
     {
         iconSrc: '/assets/courses/desktop.png',
         heading1: 'Web Apps',
-        heading2: "Elevate your online presence with our bespoke web applications, meticulously developed to enhance user experience and drive engagement across all platforms.",
+        heading2: "Elevate your online presence with our bespoke web applications, developed to enhance user experience and drive engagement across all platforms.",
         exploreMore: '#/',
     },
     {
         iconSrc: '/assets/courses/mobile.png',
         heading1: 'Mobile Apps',
-        heading2: "Unlock the full potential of mobile technology with our custom-built applications, delivering intuitive interfaces and cutting-edge functionality to captivate your audience on the go.",
+        heading2: "Unlock the full potential of mobile technology with our custom-built applications, offering user-friendly designs and advanced features that engage your audience.",
         exploreMore: '#/',
     },
     {
         iconSrc: '/assets/courses/data.png',
-        heading1: 'Data & AI',
-        heading2: "Harness the power of data-driven insights and artificial intelligence to optimize decision-making processes and drive innovation within your organization.",
+        heading1: 'Generative AI',
+        heading2: "Empower your business with our custom AI solutions, to optimize workflows and automate complex tasks. From AI model training on custom data to integrations, we help you scale.",
         exploreMore: '#/',
     },
-    {
-        iconSrc: '/assets/courses/design.png',
-        heading1: 'Graphic Designing',
-        heading2: "From striking logos to captivating visuals and illustrations, our expert graphic designers bring your brand to life with stunning creativity, leaving a lasting impression on your audience.",
-        exploreMore: '#/',
-    },
+    // {
+    //     iconSrc: '/assets/courses/design.png',
+    //     heading1: 'Graphic Designing',
+    //     heading2: "From striking logos to captivating visuals and illustrations, our expert graphic designers bring your brand to life with stunning creativity, leaving a lasting impression on your audience.",
+    //     exploreMore: '#/',
+    // },
 ]
 
 // CAROUSEL SETTINGS
