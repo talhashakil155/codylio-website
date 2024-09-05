@@ -24,12 +24,12 @@ const companyValues: DataType[] = [
     {
         icon: '/assets/mentor/flexibility2.png',
         heading: 'Flexibility',
-        description: "Flexibility is our hallmark, adapting swiftly to evolving needs, providing tailored solutions that meet diverse requirements."
+        description: "We adapt quickly to changing needs, offering personalized solutions that fit a wide range of requirements."
     },
     {
         icon: '/assets/mentor/innovation.png',
         heading: 'Innovation',
-        description: "At the heart of our ethos lies Innovation, driving us to constantly explore new ideas and technologies, delivering cutting-edge solutions."
+        description: "Innovation is at our core, pushing us to explore new ideas and technologies, and deliver advanced solutions."
     },
     {
         icon: '/assets/mentor/audit.png',
