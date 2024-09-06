@@ -102,7 +102,7 @@ export default class MultipleItems extends Component {
                                 >
                                     <Image src={item.iconSrc} alt="etc" width={64} height={64} className="inline-block m-auto" />
                                     {/* <h3 style={{fontSize:25, fontWeight: "bold"}}>{item.heading1}</h3> */}
-                                    <h3 className="text-2xl font-semibold" style={{ color: "rgb(55 65 81)", paddingTop: "5%", paddingBottom: "5%" }}>{item.heading1}</h3>
+                                    <h3 className="text-2xl font-semibold" style={{ color: "rgb(55 65 81)", paddingTop: "12%", paddingBottom: "5%" }}>{item.heading1}</h3>
                                     <p className="text-lg" style={{ color: "#424242" }}>{item.heading2}</p>
                                     {/* <Link href={item.exploreMore} className="exploreMoreLink">explore more</Link> */}
                                 </div>

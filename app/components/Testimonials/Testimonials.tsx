@@ -112,7 +112,7 @@ export default class MultipleItems extends Component {
                                     }
                                     <div className="flex">
                                         <h3 className='text-lg font-medium text-darkbrown pt-4 pb-2' style={{ marginTop: "1.5rem" }}>{items.name}</h3>
-                                        <div className="flex" style={{ marginLeft: "auto", paddingTop: "2rem", paddingRight: "1rem" }}>
+                                        <div className="flex" style={{ marginLeft: "auto", paddingTop: "2rem"}}>
                                             <StarIcon width={20} className="text-gold" />
                                             <StarIcon width={20} className="text-gold" />
                                             <StarIcon width={20} className="text-gold" />
