@@ -48,7 +48,7 @@ const products: ProductType[] = [
     {
         id: 2,
         section: "Services",
-        link: ['Custom Software Development', 'Web Apps', 'Mobile Apps', 'Data & AI', 'Graphic Designing'],
+        link: ['Custom Software Development', 'Web Apps', 'Mobile Apps', 'Generative AI'],
         icon: []
     }
     ,
